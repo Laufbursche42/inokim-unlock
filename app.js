@@ -15,7 +15,7 @@
  */
 
 // Pre-commit cache-buster auto-bumps BUILD and every ?v= on any web-asset change.
-const BUILD = 'v4';
+const BUILD = 'v5';
 
 const D = (typeof window !== 'undefined' && window.DRIVER) ? window.DRIVER : null;
 
@@ -562,7 +562,7 @@ function renderFree(box, item) {
 }
 
 // --------------------------- doc viewer (markdown of our own docs) ---------------------------
-const DOC_TITLES = { 'GUIDE.de.md': 'footGuide', 'GUIDE.en.md': 'footGuide', 'README.md': 'footReadme', 'LICENSE.de.md': 'footLicense', 'LICENSE.md': 'footLicense', 'PRIVACY.de.md': 'footPrivacy', 'PRIVACY.md': 'footPrivacy', 'TRADEMARKS.de.md': 'footTrademarks', 'TRADEMARKS.md': 'footTrademarks' };
+const DOC_TITLES = { 'GUIDE.de.md': 'footGuide', 'GUIDE.en.md': 'footGuide', 'README.md': 'footReadme', 'LICENSE.de.md': 'footLicense', 'LICENSE.md': 'footLicense', 'PRIVACY.de.md': 'footPrivacy', 'PRIVACY.md': 'footPrivacy', 'TRADEMARKS.de.md': 'footTrademarks', 'TRADEMARKS.md': 'footTrademarks', 'DISCLAIMER.de.md': 'footDisclaimer', 'DISCLAIMER.md': 'footDisclaimer' };
 const escHtml = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const slug = s => s.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
 function docFile(name) { if (name === 'README') return 'README.md'; if (name === 'GUIDE') return 'GUIDE.' + lang + '.md'; return name + (lang === 'de' ? '.de.md' : '.md'); }
@@ -595,7 +595,7 @@ async function openDocFile(file) {
   catch (e) { bodyEl.textContent = 'Could not load ' + file; }
   if (dlg.showModal) dlg.showModal();
 }
-function openDisclaimer() { openHelpText(t('footDisclaimer'), D && D.docs && D.docs.disclaimer ? L(D.docs.disclaimer) : ''); }
+function openDisclaimer() { openDocFile(docFile('DISCLAIMER')); }
 function wireDocViewer() {
   // delegated: footer doc links, the intro guide link (injected by i18n at runtime), in-doc links, disclaimer
   document.addEventListener('click', e => {

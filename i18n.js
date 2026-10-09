@@ -127,7 +127,6 @@ window.I18N = {
     warnWheel: 'Die Radgröße ändert die Tacho-Berechnung, nicht die reale Geschwindigkeit. Falsch gesetzt zeigt der Tacho falsch an.',
     warnLock: 'Das sperrt den Roller (Immobilizer). Entsperren geht nur wieder über Bluetooth.',
     warnUnlock: 'Das hebt die Sperre auf.',
-    disclaimerText: 'Dieses Werkzeug ist eine Machbarkeitsstudie, kein fertiges Produkt. Es gibt keine Gewährleistung und keine Zusicherung fehlerfreien Betriebs. Das Anheben der Geschwindigkeit hebt die Drossel auf: die ABE erlischt und der Betrieb auf öffentlichen Wegen ist dann nicht erlaubt. Nutze es nur am eigenen Fahrzeug und auf eigenes Risiko. Die Seite spricht nur lokal über Bluetooth mit dem Gerät, es werden keine Daten an einen Server gesendet. INOKIM ist eine Marke des jeweiligen Inhabers. Dieses Projekt ist unabhängig und steht in keiner Verbindung zu INOKIM oder Myway.',
 
     errNoWebBt: 'Dieser Browser hat kein Web Bluetooth. Nutze Chrome, Edge oder Bluefy (iOS).',
     errNotConnected: 'nicht verbunden',
@@ -268,7 +267,6 @@ window.I18N = {
     warnWheel: 'Wheel size changes the speedometer calculation, not the real speed. Set wrong, the speedo reads wrong.',
     warnLock: 'This locks the scooter (immobilizer). It can only be unlocked again over Bluetooth.',
     warnUnlock: 'This releases the lock.',
-    disclaimerText: 'This tool is a feasibility study, not a finished product. There is no warranty and no guarantee of error-free operation. Raising the speed removes the throttle: the type approval becomes void and riding on public roads is then not allowed. Use it only on your own vehicle and at your own risk. The page talks to the device locally over Bluetooth only, no data is sent to any server. INOKIM is a trademark of its respective owner. This project is independent and not affiliated with INOKIM or Myway.',
 
     errNoWebBt: 'This browser has no Web Bluetooth. Use Chrome, Edge or Bluefy (iOS).',
     errNotConnected: 'not connected',
