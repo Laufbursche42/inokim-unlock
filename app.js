@@ -15,7 +15,7 @@
  */
 
 // Pre-commit cache-buster auto-bumps BUILD and every ?v= on any web-asset change.
-const BUILD = 'v10';
+const BUILD = 'v11';
 
 const D = (typeof window !== 'undefined' && window.DRIVER) ? window.DRIVER : null;
 
